@@ -150,7 +150,7 @@
                                                 <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                                 <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                     <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openUserDetailModal({name: 'Juan García', email: 'juan@empresa.com', plan: 'Pro', estado: 'Activo', fecha_registro: '2024-01-15', empresa: 'Tech Corp', pais: 'México'})">Ver detalle</button>
-                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'Juan García')">Eliminar</button>
+                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'Juan García', event)">Eliminar</button>
                                                 </div>
                                             </div>
                                         </td>
@@ -167,7 +167,7 @@
                                                 <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                                 <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                     <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openUserDetailModal({name: 'María López', email: 'maria@startup.io', plan: 'Básico', estado: 'Activo', fecha_registro: '2024-02-20', empresa: 'Startup AI', pais: 'España'})">Ver detalle</button>
-                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'María López')">Eliminar</button>
+                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'María López', event)">Eliminar</button>
                                                 </div>
                                             </div>
                                         </td>
@@ -184,7 +184,7 @@
                                                 <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                                 <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                     <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openUserDetailModal({name: 'Carlos Martínez', email: 'carlos@consultora.com', plan: 'Enterprise', estado: 'Suspendido', fecha_registro: '2023-11-10', empresa: 'Consultora Global', pais: 'Argentina'})">Ver detalle</button>
-                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'Carlos Martínez')">Eliminar</button>
+                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'Carlos Martínez', event)">Eliminar</button>
                                                 </div>
                                             </div>
                                         </td>
@@ -201,7 +201,7 @@
                                                 <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                                 <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                     <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openUserDetailModal({name: 'Ana Rodríguez', email: 'ana@fintech.com', plan: 'Pro', estado: 'Activo', fecha_registro: '2024-03-05', empresa: 'FinTech Solutions', pais: 'Colombia'})">Ver detalle</button>
-                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'Ana Rodríguez')">Eliminar</button>
+                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'Ana Rodríguez', event)">Eliminar</button>
                                                 </div>
                                             </div>
                                         </td>
@@ -218,7 +218,7 @@
                                                 <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                                 <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                     <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openUserDetailModal({name: 'David Hernández', email: 'david@ecommerce.mx', plan: 'Básico', estado: 'Inactivo', fecha_registro: '2023-08-22', empresa: 'E-commerce Plus', pais: 'México'})">Ver detalle</button>
-                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'David Hernández')">Eliminar</button>
+                                                    <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('usuario', 'David Hernández', event)">Eliminar</button>
                                                 </div>
                                             </div>
                                         </td>
@@ -237,7 +237,7 @@
                         </div>
                         <div class="divide-y divide-gray-200 dark:divide-gray-700">
                             <!-- Agente 1 -->
-                            <div class="p-6">
+                            <article class="p-6">
                                 <div class="flex justify-between items-start mb-4">
                                     <div class="flex-1">
                                         <h4 class="text-lg font-bold text-gray-900 dark:text-white">Asistente de Ventas</h4>
@@ -249,7 +249,7 @@
                                             <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                             <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                 <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openAgentConfigModal('Asistente de Ventas', 'Eres un asistente experto en ventas. Tu objetivo es ayudar a los clientes a encontrar productos adecuados y cerrar ventas de manera profesional.')">Configurar</button>
-                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Asistente de Ventas')">Eliminar</button>
+                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Asistente de Ventas', event)">Eliminar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -274,10 +274,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Agente 2 -->
-                            <div class="p-6">
+                            <article class="p-6">
                                 <div class="flex justify-between items-start mb-4">
                                     <div class="flex-1">
                                         <h4 class="text-lg font-bold text-gray-900 dark:text-white">Gestor de Calendarios</h4>
@@ -289,7 +289,7 @@
                                             <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                             <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                 <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openAgentConfigModal('Gestor de Calendarios', 'Eres un experto en gestión de calendarios. Ayudas a programar reuniones, enviar invitaciones y gestionar conflictos de horarios.')">Configurar</button>
-                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Gestor de Calendarios')">Eliminar</button>
+                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Gestor de Calendarios', event)">Eliminar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -310,10 +310,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Agente 3 -->
-                            <div class="p-6">
+                            <article class="p-6">
                                 <div class="flex justify-between items-start mb-4">
                                     <div class="flex-1">
                                         <h4 class="text-lg font-bold text-gray-900 dark:text-white">Analizador de Documentos</h4>
@@ -325,7 +325,7 @@
                                             <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                             <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                 <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openAgentConfigModal('Analizador de Documentos', 'Eres un especialista en análisis de documentos. Extrae información importante, identifica cláusulas clave y proporciona resúmenes ejecutivos.')">Configurar</button>
-                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Analizador de Documentos')">Eliminar</button>
+                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Analizador de Documentos', event)">Eliminar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -354,10 +354,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Agente 4 -->
-                            <div class="p-6">
+                            <article class="p-6">
                                 <div class="flex justify-between items-start mb-4">
                                     <div class="flex-1">
                                         <h4 class="text-lg font-bold text-gray-900 dark:text-white">Asistente de Soporte</h4>
@@ -369,7 +369,7 @@
                                             <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                             <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                                 <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openAgentConfigModal('Asistente de Soporte', 'Eres un especialista en servicio al cliente. Responde preguntas frecuentes, escala problemas complejos y mantiene un tono profesional y amable.')">Configurar</button>
-                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Asistente de Soporte')">Eliminar</button>
+                                                <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('agente', 'Asistente de Soporte', event)">Eliminar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -394,7 +394,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </section>
@@ -412,7 +412,7 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Skill 1 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-blue-500">
+                        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-blue-500">
                             <div class="flex justify-between items-start mb-3">
                                 <div>
                                     <h4 class="text-lg font-bold text-gray-900 dark:text-white">Web Navigator</h4>
@@ -422,15 +422,15 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openSkillDetailModal('Web Navigator', 'Navega por sitios web para buscar información, extraer datos y completar tareas en línea.', 8)">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Web Navigator')">Eliminar</button>
+                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Web Navigator', event)">Eliminar</button>
                                     </div>
                                 </div>
                             </div>
                             <p class="text-2xl font-bold text-blue-600 dark:text-blue-400 mt-4">8<span class="text-sm ml-1">agentes</span></p>
-                        </div>
+                        </article>
 
                         <!-- Skill 2 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-green-500">
+                        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-green-500">
                             <div class="flex justify-between items-start mb-3">
                                 <div>
                                     <h4 class="text-lg font-bold text-gray-900 dark:text-white">Document Reader</h4>
@@ -440,15 +440,15 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openSkillDetailModal('Document Reader', 'Lee y procesa documentos en formatos PDF, Word, Excel y otros formatos de texto.', 5)">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Document Reader')">Eliminar</button>
+                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Document Reader', event)">Eliminar</button>
                                     </div>
                                 </div>
                             </div>
                             <p class="text-2xl font-bold text-green-600 dark:text-green-400 mt-4">5<span class="text-sm ml-1">agentes</span></p>
-                        </div>
+                        </article>
 
                         <!-- Skill 3 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-500">
+                        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-500">
                             <div class="flex justify-between items-start mb-3">
                                 <div>
                                     <h4 class="text-lg font-bold text-gray-900 dark:text-white">Calendar Integration</h4>
@@ -458,15 +458,15 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openSkillDetailModal('Calendar Integration', 'Integración con Google Calendar, Outlook y otros servicios de calendario.', 4)">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Calendar Integration')">Eliminar</button>
+                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Calendar Integration', event)">Eliminar</button>
                                     </div>
                                 </div>
                             </div>
                             <p class="text-2xl font-bold text-purple-600 dark:text-purple-400 mt-4">4<span class="text-sm ml-1">agentes</span></p>
-                        </div>
+                        </article>
 
                         <!-- Skill 4 -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-orange-500">
+                        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-orange-500">
                             <div class="flex justify-between items-start mb-3">
                                 <div>
                                     <h4 class="text-lg font-bold text-gray-900 dark:text-white">Email Sender</h4>
@@ -476,12 +476,12 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openSkillDetailModal('Email Sender', 'Envía emails automatizados con plantillas personalizadas y seguimiento de entregas.', 12)">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Email Sender')">Eliminar</button>
+                                        <button class="block w-full text-left px-4 py-2 text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmDelete('skill', 'Email Sender', event)">Eliminar</button>
                                     </div>
                                 </div>
                             </div>
                             <p class="text-2xl font-bold text-orange-600 dark:text-orange-400 mt-4">12<span class="text-sm ml-1">agentes</span></p>
-                        </div>
+                        </article>
                     </div>
                 </section>
 
@@ -578,10 +578,10 @@
                         </div>
                         <div class="divide-y divide-gray-200 dark:divide-gray-700">
                             <!-- Error 1 -->
-                            <div class="p-6 flex items-start justify-between border-l-4 border-red-500 bg-red-50 dark:bg-red-900 dark:bg-opacity-10">
+                            <article class="p-6 flex items-start justify-between border-l-4 border-red-500 bg-red-50 dark:bg-red-900 dark:bg-opacity-10">
                                 <div class="flex-1">
                                     <div class="flex items-center gap-3 mb-2">
-                                        <span class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 14:32:18</span>
+                                        <time datetime="2024-05-04T14:32:18" class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 14:32:18</time>
                                         <span class="px-2 py-1 rounded-full text-xs font-medium bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-200">CRÍTICO</span>
                                     </div>
                                     <h4 class="font-bold text-gray-900 dark:text-white">Asistente de Ventas</h4>
@@ -591,16 +591,16 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openErrorDetailModal({timestamp: '2024-05-04 14:32:18', agent: 'Asistente de Ventas', type: 'CRÍTICO', code: 'ERR_TIMEOUT_001', description: 'Connection timeout: No se pudo conectar a la API externa después de 30 segundos.'})">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Asistente de Ventas', '2024-05-04 14:32:18')">Marcar como resuelto</button>
+                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Asistente de Ventas', '2024-05-04 14:32:18', event)">Marcar como resuelto</button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Error 2 -->
-                            <div class="p-6 flex items-start justify-between border-l-4 border-orange-500 bg-orange-50 dark:bg-orange-900 dark:bg-opacity-10">
+                            <article class="p-6 flex items-start justify-between border-l-4 border-orange-500 bg-orange-50 dark:bg-orange-900 dark:bg-opacity-10">
                                 <div class="flex-1">
                                     <div class="flex items-center gap-3 mb-2">
-                                        <span class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 13:45:22</span>
+                                        <time datetime="2024-05-04T13:45:22" class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 13:45:22</time>
                                         <span class="px-2 py-1 rounded-full text-xs font-medium bg-orange-100 dark:bg-orange-800 text-orange-800 dark:text-orange-200">ADVERTENCIA</span>
                                     </div>
                                     <h4 class="font-bold text-gray-900 dark:text-white">Gestor de Calendarios</h4>
@@ -610,16 +610,16 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openErrorDetailModal({timestamp: '2024-05-04 13:45:22', agent: 'Gestor de Calendarios', type: 'ADVERTENCIA', code: 'ERR_RATE_LIMIT_002', description: 'Rate limit exceeded: Se alcanzó el límite de solicitudes a Google Calendar API.'})">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Gestor de Calendarios', '2024-05-04 13:45:22')">Marcar como resuelto</button>
+                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Gestor de Calendarios', '2024-05-04 13:45:22', event)">Marcar como resuelto</button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Error 3 -->
-                            <div class="p-6 flex items-start justify-between border-l-4 border-red-500 bg-red-50 dark:bg-red-900 dark:bg-opacity-10">
+                            <article class="p-6 flex items-start justify-between border-l-4 border-red-500 bg-red-50 dark:bg-red-900 dark:bg-opacity-10">
                                 <div class="flex-1">
                                     <div class="flex items-center gap-3 mb-2">
-                                        <span class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 12:15:05</span>
+                                        <time datetime="2024-05-04T12:15:05" class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 12:15:05</time>
                                         <span class="px-2 py-1 rounded-full text-xs font-medium bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-200">CRÍTICO</span>
                                     </div>
                                     <h4 class="font-bold text-gray-900 dark:text-white">Analizador de Documentos</h4>
@@ -629,16 +629,16 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openErrorDetailModal({timestamp: '2024-05-04 12:15:05', agent: 'Analizador de Documentos', type: 'CRÍTICO', code: 'ERR_OOM_003', description: 'Out of memory: El agente requiere más RAM de la disponible para procesar el documento.'})">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Analizador de Documentos', '2024-05-04 12:15:05')">Marcar como resuelto</button>
+                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Analizador de Documentos', '2024-05-04 12:15:05', event)">Marcar como resuelto</button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Error 4 -->
-                            <div class="p-6 flex items-start justify-between border-l-4 border-yellow-500 bg-yellow-50 dark:bg-yellow-900 dark:bg-opacity-10">
+                            <article class="p-6 flex items-start justify-between border-l-4 border-yellow-500 bg-yellow-50 dark:bg-yellow-900 dark:bg-opacity-10">
                                 <div class="flex-1">
                                     <div class="flex items-center gap-3 mb-2">
-                                        <span class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 11:30:44</span>
+                                        <time datetime="2024-05-04T11:30:44" class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 11:30:44</time>
                                         <span class="px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-200">INFO</span>
                                     </div>
                                     <h4 class="font-bold text-gray-900 dark:text-white">Asistente de Soporte</h4>
@@ -648,16 +648,16 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openErrorDetailModal({timestamp: '2024-05-04 11:30:44', agent: 'Asistente de Soporte', type: 'INFO', code: 'INF_CONFIG_004', description: 'Configuration changed: Se actualizó la configuración del agente correctamente.'})">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Asistente de Soporte', '2024-05-04 11:30:44')">Marcar como resuelto</button>
+                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Asistente de Soporte', '2024-05-04 11:30:44', event)">Marcar como resuelto</button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Error 5 -->
-                            <div class="p-6 flex items-start justify-between border-l-4 border-orange-500 bg-orange-50 dark:bg-orange-900 dark:bg-opacity-10">
+                            <article class="p-6 flex items-start justify-between border-l-4 border-orange-500 bg-orange-50 dark:bg-orange-900 dark:bg-opacity-10">
                                 <div class="flex-1">
                                     <div class="flex items-center gap-3 mb-2">
-                                        <span class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 10:12:33</span>
+                                        <time datetime="2024-05-04T10:12:33" class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-04 10:12:33</time>
                                         <span class="px-2 py-1 rounded-full text-xs font-medium bg-orange-100 dark:bg-orange-800 text-orange-800 dark:text-orange-200">ADVERTENCIA</span>
                                     </div>
                                     <h4 class="font-bold text-gray-900 dark:text-white">Asistente de Ventas</h4>
@@ -667,16 +667,16 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openErrorDetailModal({timestamp: '2024-05-04 10:12:33', agent: 'Asistente de Ventas', type: 'ADVERTENCIA', code: 'ERR_PERF_005', description: 'Performance degradation: El tiempo de respuesta está por encima del umbral esperado.'})">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Asistente de Ventas', '2024-05-04 10:12:33')">Marcar como resuelto</button>
+                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Asistente de Ventas', '2024-05-04 10:12:33', event)">Marcar como resuelto</button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
                             <!-- Error 6 -->
-                            <div class="p-6 flex items-start justify-between border-l-4 border-red-500 bg-red-50 dark:bg-red-900 dark:bg-opacity-10">
+                            <article class="p-6 flex items-start justify-between border-l-4 border-red-500 bg-red-50 dark:bg-red-900 dark:bg-opacity-10">
                                 <div class="flex-1">
                                     <div class="flex items-center gap-3 mb-2">
-                                        <span class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-03 23:45:12</span>
+                                        <time datetime="2024-05-03T23:45:12" class="text-xs font-mono text-gray-600 dark:text-gray-400">2024-05-03 23:45:12</time>
                                         <span class="px-2 py-1 rounded-full text-xs font-medium bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-200">CRÍTICO</span>
                                     </div>
                                     <h4 class="font-bold text-gray-900 dark:text-white">Gestor de Calendarios</h4>
@@ -686,10 +686,10 @@
                                     <button class="dropdown-trigger p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg transition" onclick="toggleDropdown(event)">⋮</button>
                                     <div class="dropdown-menu hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg z-10">
                                         <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="openErrorDetailModal({timestamp: '2024-05-03 23:45:12', agent: 'Gestor de Calendarios', type: 'CRÍTICO', code: 'ERR_DB_006', description: 'Database connection failed: No se pudo establecer conexión con la base de datos principal.'})">Ver detalle</button>
-                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Gestor de Calendarios', '2024-05-03 23:45:12')">Marcar como resuelto</button>
+                                        <button class="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600" onclick="confirmResolveError('Gestor de Calendarios', '2024-05-03 23:45:12', event)">Marcar como resuelto</button>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </section>
@@ -763,6 +763,455 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- ============================================ -->
+    <!-- JavaScript Embebido (todo en un solo archivo) -->
+    <!-- ============================================ -->
+    <script>
+        // ============================================
+        // Theme Management (Dark/Light Mode)
+        // ============================================
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        function applyTheme(theme) {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            
+            if (theme === 'dark') {
+                html.classList.add('dark');
+                icon.textContent = '☀️';
+            } else {
+                html.classList.remove('dark');
+                icon.textContent = '🌙';
+            }
+        }
+
+        // ============================================
+        // Navigation
+        // ============================================
+
+        function navigateTo(sectionId, event) {
+            event?.preventDefault();
+            
+            // Hide all sections
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => section.classList.add('hidden'));
+            
+            // Show target section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.remove('hidden');
+            }
+            
+            // Update active nav link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active', 'bg-blue-50', 'dark:bg-blue-900', 'text-blue-600', 'dark:text-blue-300', 'font-medium');
+                link.classList.add('text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-100', 'dark:hover:bg-gray-700');
+            });
+            
+            const activeLink = document.querySelector(`a[href="#${sectionId}"]`);
+            if (activeLink) {
+                activeLink.classList.remove('text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-100', 'dark:hover:bg-gray-700');
+                activeLink.classList.add('active', 'bg-blue-50', 'dark:bg-blue-900', 'text-blue-600', 'dark:text-blue-300', 'font-medium');
+            }
+            
+            // Update title
+            const titleMap = {
+                'dashboard': '📊 Dashboard',
+                'usuarios': '👥 Usuarios',
+                'agentes': '🤖 Agentes',
+                'skills': '⚙️ Skills',
+                'contrataciones': '📋 Contrataciones',
+                'errores': '⚠️ Log de Errores'
+            };
+            document.getElementById('section-title').textContent = titleMap[sectionId] || 'Dashboard';
+        }
+
+        // ============================================
+        // Dropdown Management
+        // ============================================
+
+        function toggleDropdown(event) {
+            event.stopPropagation();
+            const button = event.currentTarget;
+            const menu = button.nextElementSibling;
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-menu').forEach(m => {
+                if (m !== menu) m.classList.add('hidden');
+            });
+            
+            // Toggle current dropdown
+            menu.classList.toggle('hidden');
+        }
+
+        // Close dropdowns on click outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.relative')) {
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    menu.classList.add('hidden');
+                });
+            }
+        });
+
+        // ============================================
+        // Expandable Content (Skills)
+        // ============================================
+
+        function toggleExpandable(event) {
+            event.preventDefault();
+            const button = event.currentTarget;
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.toggle-icon');
+            
+            // Toggle visibility
+            const isHidden = content.classList.contains('hidden');
+            
+            if (isHidden) {
+                content.classList.remove('hidden');
+                icon.textContent = '▼';
+                // Trigger animation
+                setTimeout(() => {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }, 0);
+            } else {
+                content.style.maxHeight = '0';
+                setTimeout(() => {
+                    content.classList.add('hidden');
+                    icon.textContent = '▶';
+                }, 300);
+            }
+        }
+
+        // ============================================
+        // User Detail Modal
+        // ============================================
+
+        function openUserDetailModal(userData) {
+            const modal = document.getElementById('userDetailModal');
+            const content = document.getElementById('userDetailContent');
+            
+            content.innerHTML = `
+                <div class="space-y-3">
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Nombre</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${userData.name}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Email</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${userData.email}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Plan</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${userData.plan}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Estado</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${userData.estado}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Fecha de Registro</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${userData.fecha_registro}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Empresa</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${userData.empresa}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">País</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${userData.pais}</p>
+                    </div>
+                </div>
+                <div class="mt-6 flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition font-medium" onclick="closeUserDetailModal()">Cerrar</button>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function closeUserDetailModal(event) {
+            if (event && !event.target.id.includes('userDetailModal')) return;
+            document.getElementById('userDetailModal').classList.add('hidden');
+        }
+
+        // ============================================
+        // Agent Config Modal
+        // ============================================
+
+        function openAgentConfigModal(agentName, systemPrompt) {
+            const modal = document.getElementById('agentConfigModal');
+            const content = document.getElementById('agentConfigContent');
+            
+            content.innerHTML = `
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block font-medium mb-2">Nombre del Agente</label>
+                        <p class="text-gray-900 dark:text-white font-medium text-lg">${agentName}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block font-medium mb-2">Prompt del Sistema</label>
+                        <textarea class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" rows="6" placeholder="Edita el prompt del sistema...">${systemPrompt}</textarea>
+                    </div>
+                </div>
+                <div class="mt-6 flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition font-medium" onclick="closeAgentConfigModal()">Cancelar</button>
+                    <button class="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium" onclick="saveAgentConfig()">Guardar</button>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function closeAgentConfigModal(event) {
+            if (event && !event.target.id.includes('agentConfigModal')) return;
+            document.getElementById('agentConfigModal').classList.add('hidden');
+        }
+
+        function saveAgentConfig() {
+            alert('Configuración del agente guardada correctamente.');
+            closeAgentConfigModal();
+        }
+
+        // ============================================
+        // Skill Detail Modal
+        // ============================================
+
+        function openSkillDetailModal(skillName, description, agentCount) {
+            const modal = document.getElementById('skillDetailModal');
+            const content = document.getElementById('skillDetailContent');
+            
+            content.innerHTML = `
+                <div class="space-y-3">
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Nombre de la Skill</label>
+                        <p class="text-gray-900 dark:text-white font-medium text-lg">${skillName}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Descripción</label>
+                        <p class="text-gray-900 dark:text-white">${description}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Agentes Habilitados</label>
+                        <p class="text-gray-900 dark:text-white font-medium text-lg">${agentCount} agentes</p>
+                    </div>
+                </div>
+                <div class="mt-6 flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition font-medium" onclick="closeSkillDetailModal()">Cerrar</button>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function closeSkillDetailModal(event) {
+            if (event && !event.target.id.includes('skillDetailModal')) return;
+            document.getElementById('skillDetailModal').classList.add('hidden');
+        }
+
+        // ============================================
+        // Contract Detail Modal
+        // ============================================
+
+        function openContractDetailModal(contractData) {
+            const modal = document.getElementById('contractDetailModal');
+            const content = document.getElementById('contractDetailContent');
+            
+            let skillsList = contractData.skills
+                .map(skill => `<div class="flex justify-between text-gray-700 dark:text-gray-300"><span>${skill.name}</span><span>$${skill.price}</span></div>`)
+                .join('');
+            
+            content.innerHTML = `
+                <div class="space-y-3">
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Cliente</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${contractData.client}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Agente Alquilado</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${contractData.agent}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Período</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${contractData.start} - ${contractData.end}</p>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block font-medium mb-2">Desglose de Skills</label>
+                        <div class="space-y-1">
+                            ${skillsList}
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-200 dark:border-gray-600 pt-3">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600 dark:text-gray-400 font-medium">Total</span>
+                            <span class="text-gray-900 dark:text-white font-bold text-lg">$${contractData.total}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition font-medium" onclick="closeContractDetailModal()">Cerrar</button>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function closeContractDetailModal(event) {
+            if (event && !event.target.id.includes('contractDetailModal')) return;
+            document.getElementById('contractDetailModal').classList.add('hidden');
+        }
+
+        // ============================================
+        // Error Detail Modal
+        // ============================================
+
+        function openErrorDetailModal(errorData) {
+            const modal = document.getElementById('errorDetailModal');
+            const content = document.getElementById('errorDetailContent');
+            
+            let badgeClass = 'bg-red-100 dark:bg-red-800 text-red-800 dark:text-red-200';
+            if (errorData.type === 'ADVERTENCIA') {
+                badgeClass = 'bg-orange-100 dark:bg-orange-800 text-orange-800 dark:text-orange-200';
+            } else if (errorData.type === 'INFO') {
+                badgeClass = 'bg-yellow-100 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-200';
+            }
+            
+            content.innerHTML = `
+                <div class="space-y-3">
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Timestamp</label>
+                        <p class="text-gray-900 dark:text-white font-mono text-sm">${errorData.timestamp}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Agente</label>
+                        <p class="text-gray-900 dark:text-white font-medium">${errorData.agent}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Tipo</label>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium ${badgeClass}">${errorData.type}</span>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Código de Error</label>
+                        <p class="text-gray-900 dark:text-white font-mono text-sm">${errorData.code}</p>
+                    </div>
+                    <div>
+                        <label class="text-sm text-gray-600 dark:text-gray-400 block">Descripción</label>
+                        <p class="text-gray-900 dark:text-white">${errorData.description}</p>
+                    </div>
+                </div>
+                <div class="mt-6 flex gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <button class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition font-medium" onclick="closeErrorDetailModal()">Cerrar</button>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function closeErrorDetailModal(event) {
+            if (event && !event.target.id.includes('errorDetailModal')) return;
+            document.getElementById('errorDetailModal').classList.add('hidden');
+        }
+
+        // ============================================
+        // Confirmation Dialogs
+        // ============================================
+
+        function confirmDelete(type, name, event) {
+            if (confirm(`¿Estás seguro de que deseas eliminar este ${type}: ${name}?`)) {
+                // Encontrar y eliminar el elemento contenedor del DOM
+                const button = event.target;
+                
+                // Buscar el contenedor adecuado según el tipo (tr para usuarios/contrataciones, article para agentes/skills/errores)
+                const container = button.closest('tr') || button.closest('article');
+                
+                if (container) {
+                    container.style.transition = 'opacity 0.3s ease-out';
+                    container.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        container.remove();
+                    }, 300);
+                }
+                
+                closeAllDropdowns();
+            }
+        }
+
+        function confirmResolveError(agentName, timestamp, event) {
+            if (confirm(`¿Marcar el error de ${agentName} (${timestamp}) como resuelto?`)) {
+                // Encontrar el artículo del error y eliminarlo del DOM
+                const button = event.target;
+                const errorArticle = button.closest('article');
+                
+                if (errorArticle) {
+                    // Animación suave antes de eliminar
+                    errorArticle.style.transition = 'opacity 0.3s ease-out, max-height 0.3s ease-out, padding 0.3s ease-out';
+                    errorArticle.style.opacity = '0';
+                    errorArticle.style.maxHeight = errorArticle.offsetHeight + 'px';
+                    
+                    setTimeout(() => {
+                        errorArticle.style.maxHeight = '0';
+                        errorArticle.style.padding = '0';
+                        errorArticle.style.overflow = 'hidden';
+                    }, 50);
+                    
+                    setTimeout(() => {
+                        errorArticle.remove();
+                    }, 350);
+                }
+                
+                closeAllDropdowns();
+            }
+        }
+
+        // ============================================
+        // Helper Functions
+        // ============================================
+
+        function closeAllDropdowns() {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.add('hidden');
+            });
+        }
+
+        // ============================================
+        // Estilos para transiciones de contenido expandible
+        // ============================================
+
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .expandable-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // ============================================
+        // Initialization
+        // ============================================
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initTheme();
+            
+            // Close dropdowns when clicking on nav links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', closeAllDropdowns);
+            });
+        });
+    </script>
 </body>
 </html>
